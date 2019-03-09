@@ -18,6 +18,8 @@ option(QTERMWIDGET_USE_UTEMPTER "Uses the libutempter library. Mainly for FreeBS
 option(QTERMWIDGET_BUILD_PYTHON_BINDING "Build python binding" OFF)
 option(USE_UTF8PROC "Use libutf8proc for better Unicode support. Default OFF" OFF)
 
+# Enable verbose warnings
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -pedantic -Wextra")
 
 # just change version for releases
 set(QTERMWIDGET_VERSION_MAJOR "0")
